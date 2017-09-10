@@ -1,4 +1,4 @@
-
+function runSQLTest(){
 //start sqllite
 var myDB = window.sqlitePlugin.openDatabase({name: "mySQLite.db", location: 'default'});
 
@@ -37,3 +37,5 @@ $("#TableData").append("<tr><td>"+results.rows.item(i).id+"</td><td>"+results.ro
 }
 }, null);
 });
+
+}
