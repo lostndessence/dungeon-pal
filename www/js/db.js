@@ -1,7 +1,7 @@
 var db = null;
  
 document.addEventListener('deviceready', function() {
-  db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
+  db = window.openDatabase("test", "1.0", "Test DB", 1000000);
   
   db.transaction(function(tx) {
     tx.executeSql('CREATE TABLE IF NOT EXISTS DemoTable (name, score)');
