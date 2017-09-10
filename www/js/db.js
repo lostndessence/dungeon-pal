@@ -2,7 +2,6 @@ var db = null;
  
 document.addEventListener('deviceready', function() {
   db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
-  console.log(navigator.notification);
   
   db.transaction(function(tx) {
     tx.executeSql('CREATE TABLE IF NOT EXISTS DemoTable (name, score)');
@@ -11,7 +10,8 @@ document.addEventListener('deviceready', function() {
   }, function(error) {
     console.log('Transaction ERROR: ' + error.message);
   }, function() {
-    navigator.notification.alert('Populated database OK',alertDismissed,'Message', 'Clear');
+    console.log('Populated database OK');
   });
   
 });
+
