@@ -63,6 +63,7 @@
         document.addEventListener("deviceready", startPlugins, false);
 		
 		function startPlugins() {
+			console.log(navigator.notification);
 			navigator.notification.alert('Loaded', alertDismissed, ' ', 'OK']);
 		}
 		
