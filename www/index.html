@@ -62,7 +62,7 @@
 		
 		function onDeviceReady() {
 			console.log(navigator.notification);
-			navigator.notification.alert(message, alertCallback, [title], [buttonName]);
+			navigator.notification.alert('Loaded', alertCallback, [title], [buttonName]);
 		}
 		
 		function alertDismissed() {
