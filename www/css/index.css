@@ -40,7 +40,7 @@ body {
 
 /* Portrait layout (default) */
 .app {
-	background-image: url(../img/Wooden_UI_png/bg_01_02.png);
+	background-image: url('../img/Wooden_UI_png/bg_01_02.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
