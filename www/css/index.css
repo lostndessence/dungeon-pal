@@ -25,7 +25,7 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-color:#E4E4E4;
-	background-image:url("../img/Wooden_UI_png/board.png");
+	background-image:url("/img/Wooden_UI_png/board.png");
 	background-repeat:repeat-y;
     background-size: contain;
     background-attachment:fixed;
@@ -40,7 +40,7 @@ body {
 
 /* Portrait layout (default) */
 .app {
-	background-image: url('../img/Wooden_UI_png/bg_01_02.png');
+	background-image: url('/img/Wooden_UI_png/bg_01_02.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
